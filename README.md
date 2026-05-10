@@ -34,8 +34,8 @@ distribution, class-boundary errors, and region-by-class reliability.
 
 ## Repository contents
 
-- **`src/`** — Python modules implementing the four-arm recursive
-  training procedure described in Section 2 of the manuscript: the
+- **`src/`** — Source code for the four-arm recursive training
+  procedure described in Section 2 of the manuscript, including the
   manuscript-aligned hyperparameter configuration (`config.py`), the
   Lesiv 10-class harmonisation aligned with the ESA WorldCover main
   classes (`classes.py`), and the per-arm training-set composition logic
