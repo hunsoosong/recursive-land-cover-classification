@@ -34,14 +34,32 @@ distribution, class-boundary errors, and region-by-class reliability.
 
 ## Repository contents
 
-The repository contains the experimental protocol of the four-arm
-recursive training procedure described in Section 2 of the manuscript
-(`src/`), the aggregated metric tables underlying every numerical figure
-and headline value reported in the paper (`results/`), and a small
-verification script that reads those tables and reproduces the Section 3.1
-headline numbers (`scripts/summarize_trajectories.py`). External datasets
-and trained checkpoints are not redistributed here; see
-`docs/data_sources.md` and `docs/reproducibility.md` for pointers.
+- **`src/`** — Python modules implementing the four-arm recursive
+  training procedure described in Section 2 of the manuscript: the
+  manuscript-aligned hyperparameter configuration (`config.py`), the
+  Lesiv 10-class harmonisation aligned with the ESA WorldCover main
+  classes (`classes.py`), and the per-arm training-set composition logic
+  for the human-versus-pseudo × replace-versus-accumulate factorial
+  design (`protocol.py`).
+- **`results/`** — Aggregated metric tables underlying every numerical
+  figure and headline value reported in the paper, covering 3 spatial
+  sampling seeds × 4 arms × 10 generations × 5 sampling scales: overall
+  accuracy, macro-F1, worst-class recall, Expected Calibration Error
+  after temperature scaling, per-class trajectories, generation-wise
+  confusion matrices, predicted-prevalence diagnostics, confidently-wrong
+  fractions, and 6° spatial-grid per-class accuracy.
+- **`scripts/summarize_trajectories.py`** — Verification script that
+  reads the aggregated tables and reproduces the Section 3.1 headline
+  numbers in a single command (per-arm Generation 0 → Generation 9
+  trajectories, B's sustained learning gain, C's degradation, A and D
+  stability, and the D / B Expected Calibration Error ratio at
+  Generation 9 annotated in Fig. 2(d)).
+- **`docs/`** — External data sources (AlphaEarth, Lesiv) and
+  reproduction scope.
+
+External datasets and trained checkpoints are not redistributed in this
+repository; see `docs/data_sources.md` and `docs/reproducibility.md` for
+pointers.
 
 ## Public data sources used in this study
 
