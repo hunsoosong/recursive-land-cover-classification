@@ -8,64 +8,36 @@ This repository accompanies the paper:
 > *Stable Accuracy, Drifting Reliability: Recursive Pseudo-Label Reuse in
 > Land-Cover Mapping with Geospatial Foundation Embeddings.*
 
-It provides:
+It contains the experimental protocol of the four-arm recursive training
+procedure described in Section 2 of the manuscript (`src/`), the aggregated
+metric tables underlying every numerical figure and headline value reported
+in the paper (`results/`), and a small verification script that reads those
+tables and reproduces the Section 3.1 headline numbers
+(`scripts/summarize_trajectories.py`). External datasets and trained
+checkpoints are not redistributed here; see `docs/data_sources.md` and
+`docs/reproducibility.md` for pointers.
 
-1. The **experimental protocol** of the four-arm recursive training procedure
-   described in Section 2 of the manuscript, expressed as documented Python
-   (`src/`).
-2. The **aggregated metric tables** from which every numerical figure and
-   headline value in the paper was produced (`results/`). Figure 1 of the
-   manuscript is a conceptual schematic of the four arms and has no
-   numerical inputs.
-3. A small **verification script** that reads those tables and prints the
-   per-arm trajectory and the Section 3.1 headline numbers
-   (`scripts/summarize_trajectories.py`).
+## Public data sources used in this study
 
-## Scope
-
-The recursive training procedure runs on top of two publicly available
-datasets: the global land-cover validation reference dataset of Lesiv
-et al. (2025) and the AlphaEarth Foundation embeddings of Brown et al.
-(2025). This repository contains:
-
-- the experimental design (four arms x ten generations x three sampling
-  seeds x five sampling scales) at a level of detail sufficient for the
-  reported numbers to be independently verified, and
-- the aggregated outputs underlying every numerical figure and headline
-  value in the paper.
-
-External datasets and trained checkpoints can be obtained from their
-original providers; see `docs/data_sources.md` and `docs/reproducibility.md`
-for pointers.
-
-## Layout
-
-```
-.
-├── src/
-│   ├── config.py                 Hyperparameters reported in the manuscript
-│   ├── classes.py                Lesiv 10-class harmonisation (Section 2.2)
-│   └── protocol.py               Four-arm recursive training protocol
-│                                 (Section 2.1) as documented Python
-├── scripts/
-│   └── summarize_trajectories.py Verification of headline numbers
-├── results/                      Aggregated metric tables (figure inputs)
-├── docs/
-│   ├── data_sources.md           AlphaEarth + Lesiv pointers
-│   └── reproducibility.md        Reproduction scope
-├── environment.yml
-├── requirements.txt
-├── CITATION.cff
-└── LICENSE                       MIT
-```
+- Land-cover reference labels: Lesiv et al. (2025) global land-cover
+  validation reference dataset — <https://doi.org/10.5194/essd-17-6149-2025>
+- Geospatial foundation embeddings: AlphaEarth Foundations
+  (Brown et al., 2025) — Google Earth Engine asset
+  `GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL`
 
 ## Citation
 
 If you use this code or the derived artifacts in `results/`, please cite
 the paper above. A `CITATION.cff` file is provided for tooling support.
 
-This repository is archived on Zenodo: [10.5281/zenodo.20108217](https://doi.org/10.5281/zenodo.20108217).
+This repository is archived on Zenodo:
+[10.5281/zenodo.20108217](https://doi.org/10.5281/zenodo.20108217).
+
+## Acknowledgments
+
+This work was supported by the National Research Foundation of Korea (NRF)
+grant funded by the Korea government (MSIT) (RS-2026-25499133).
 
 ## License
 
-MIT - see `LICENSE`.
+MIT — see `LICENSE`.
