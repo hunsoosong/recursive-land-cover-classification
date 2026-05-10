@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived artifacts, please cite the accompanying paper."
+title: "Recursive pseudo-label reuse in land-cover mapping with geospatial foundation embeddings (reference implementation)"
+abstract: "Experimental protocol and aggregated metric tables accompanying the paper *Stable Accuracy, Drifting Reliability: Recursive Pseudo-Label Reuse in Land-Cover Mapping with Geospatial Foundation Embeddings*."
+type: software
+authors:
+  - family-names: Hwang
+    given-names: Jimin
+    affiliation: "School of Civil Engineering, Chungbuk National University"
+  - family-names: Jeong
+    given-names: Doyoung
+    affiliation: "AI Research Center, SI Analytics Co., Ltd."
+  - family-names: Song
+    given-names: Hunsoo
+    affiliation: "School of Civil Engineering, Chungbuk National University"
+    email: hunsoo.song@cbnu.ac.kr
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+license: MIT
+version: 1.0.0
+date-released: "2026-05-10"
+preferred-citation:
+  type: article
+  title: "Stable Accuracy, Drifting Reliability: Recursive Pseudo-Label Reuse in Land-Cover Mapping with Geospatial Foundation Embeddings"
+  authors:
+    - family-names: Hwang
+      given-names: Jimin
+    - family-names: Jeong
+      given-names: Doyoung
+    - family-names: Song
+      given-names: Hunsoo
+  year: 2026

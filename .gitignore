@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+.conda/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Run outputs (not committed)
+runs/
+checkpoints/
+embeddings_cache/
+*.pt
+*.pth
+*.ckpt
+
+# Verification script outputs (regeneratable)
+scripts/summary_trajectory.png
+
+# Large or transient parquet/numpy artifacts that are not part of results/
+*.parquet
+!results/*.parquet
+*.npz
+!results/*.npz
+
+# Logs
+*.log
+logs/
