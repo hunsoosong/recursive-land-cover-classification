@@ -18,6 +18,11 @@ authors:
 license: MIT
 version: 1.0.0
 date-released: "2026-05-10"
+doi: 10.5281/zenodo.20108217
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20108217
+    description: Concept DOI (always resolves to the latest version)
 preferred-citation:
   type: article
   title: "Stable Accuracy, Drifting Reliability: Recursive Pseudo-Label Reuse in Land-Cover Mapping with Geospatial Foundation Embeddings"

@@ -1,5 +1,7 @@
 # Recursive pseudo-label reuse in land-cover mapping with geospatial foundation embeddings
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20108217.svg)](https://doi.org/10.5281/zenodo.20108217)
+
 This repository accompanies the paper:
 
 > Hwang, J., Jeong, D., Song, H. (2026).
@@ -79,8 +81,8 @@ Add `--plot` to also save a small four-panel verification PNG.
 If you use this code or the derived artifacts in `results/`, please cite
 the paper above. A `CITATION.cff` file is provided for tooling support.
 
-This repository is also archived on Zenodo (DOI to be added upon
-acceptance).
+This repository is archived on Zenodo: [10.5281/zenodo.20108217](https://doi.org/10.5281/zenodo.20108217)
+(concept DOI; always resolves to the latest version).
 
 ## License
 
