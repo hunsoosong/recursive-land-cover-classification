@@ -38,23 +38,6 @@ External datasets and trained checkpoints can be obtained from their
 original providers; see `docs/data_sources.md` and `docs/reproducibility.md`
 for pointers.
 
-## Quick start: verify the headline numbers
-
-```bash
-conda env create -f environment.yml
-conda activate recursive-land-cover
-python scripts/summarize_trajectories.py
-```
-
-This reads `results/metrics_long.csv` and prints, for each of the four
-arms, the mean +/- standard deviation of overall accuracy, macro-F1,
-worst-class recall, and ECE at every generation. It then prints the
-Section 3.1 headline numbers: B's gain from Generation 0, C's drop from
-Generation 0, A and D stability, and the D / B ECE ratio at Generation 9
-(matching the annotation on Fig. 2(d)).
-
-Add `--plot` to also save a small four-panel verification PNG.
-
 ## Layout
 
 ```
@@ -81,8 +64,7 @@ Add `--plot` to also save a small four-panel verification PNG.
 If you use this code or the derived artifacts in `results/`, please cite
 the paper above. A `CITATION.cff` file is provided for tooling support.
 
-This repository is archived on Zenodo: [10.5281/zenodo.20108217](https://doi.org/10.5281/zenodo.20108217)
-(concept DOI; always resolves to the latest version).
+This repository is archived on Zenodo: [10.5281/zenodo.20108217](https://doi.org/10.5281/zenodo.20108217).
 
 ## License
 
