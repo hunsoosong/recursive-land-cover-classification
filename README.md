@@ -84,4 +84,5 @@ grant funded by the Korea government (MSIT) (RS-2026-25499133).
 
 ## License
 
-MIT — see `LICENSE`.
+This repository is released under the Creative Commons Attribution 4.0
+International License (CC BY 4.0) — see `LICENSE`.
